@@ -1,15 +1,11 @@
 
-
-let = numberRandomComputer = parseInt(Math.random());
+// DADI  
+let = numberRandomComputer = parseInt((Math.random() * 6 + 1));
 console.log(numberRandomComputer);
 
-let = numberRandomUser = parseInt(Math.random());
+let = numberRandomUser = parseInt((Math.random() * 6 + 1));
 console.log(numberRandomUser);
 
-let random = 0; 
-
-
-for(random = 0;random < 6; random++){
 
     if(numberRandomComputer > numberRandomUser){
         console.log("Ha vinto il Computer")
@@ -18,6 +14,8 @@ for(random = 0;random < 6; random++){
         console.log("Ha vinto il Giocatore")
     }
     else{
-        console.log("Inserisci un valore numerico")
+        console.log("Pareggio")
     }
-}
+
+
+// EMAIL
