@@ -22,17 +22,23 @@ console.log(numberRandomUser);
 
 
 // creo una lista di email
-// chiedere all'utente un email
-// scrivi in console.log l'email che vuoi selezionare
-// chiedere all'utente se e presente l'email inserita nella lista
-// scrivi un messaggio in caso non e stata scritta nessuna dell'email della lista
+// chiedere all'utente un email con un prompt
+// scrivi l'email che vuoi selezionare
+// scrivi in console accesso consentito e negato in base alla scelta dell'utente
 
 let listEmail = ["Milano01@gmail.it","Roma02@gmail.it","Firenze03@gmail.it","Venezia04@gmail.it"];
 console.log(listEmail);
 
+let inputUser = prompt("Inserisci un Email");
 
-for(listEmail = 0; listEmail.length;listEmail++){
+for(let i = 0; i < listEmail.length; i++){
 
+    if(inputUser === listEmail){
+    console.log("Accesso consentito");
+   }
+   else if(inputUser !== listEmail){
+   console.log("Accesso Negato");
+   }
 }
 
 
