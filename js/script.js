@@ -30,20 +30,20 @@ let listEmail = ["Milano01@gmail.it","Roma02@gmail.it","Firenze03@gmail.it","Ven
 console.log(listEmail);
 
 let inputUser = prompt("Inserisci un Email");
-let emailStatus;
+let emailStatus = false;
 
 for(let i = 0; i < listEmail.length; i++){
 
-    if(emailStatus === false){
-        console.log("Email non trovata");
+    if(inputUser === listEmail[i]){
+        emailStatus = true;
     }
 
-    if(inputUser === listEmail[i]){
+}
+if(emailStatus){
     console.log("Accesso consentito");
    }
-   else if(inputUser !== listEmail[i]){
+   else{
    console.log("Accesso Negato");
    }
-}
 
 
