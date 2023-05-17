@@ -19,3 +19,20 @@ console.log(numberRandomUser);
 
 
 // EMAIL
+
+
+// creo una lista di email
+// chiedere all'utente un email
+// scrivi in console.log l'email che vuoi selezionare
+// chiedere all'utente se e presente l'email inserita nella lista
+// scrivi un messaggio in caso non e stata scritta nessuna dell'email della lista
+
+let listEmail = ["Milano01@gmail.it","Roma02@gmail.it","Firenze03@gmail.it","Venezia04@gmail.it"];
+console.log(listEmail);
+
+
+for(listEmail = 0; listEmail.length;listEmail++){
+
+}
+
+
